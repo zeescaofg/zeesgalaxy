@@ -89,7 +89,7 @@ function tpZombiesToPlayer()
         
         for i, v in pairs(ztable) do
             if v:FindFirstChild("Head") then
-                local targetPosition = hrp.Position + lookDirection * 5
+                local targetPosition = hrp.Position + lookDirection * 10
                 v.Head.CFrame = CFrame.new(targetPosition)
                 v.Head.Anchored = true
             end
